@@ -4,7 +4,7 @@
 
 ## 实时演示
 
-<CarotaDemo height="180px" :show-json="true" :runs='[{&quot;text&quot;:&quot;粗体文本&quot;,&quot;bold&quot;:true},{&quot;text&quot;:&quot; 和 &quot;},{&quot;text&quot;:&quot;斜体文本&quot;,&quot;italic&quot;:true},{&quot;text&quot;:&quot;\n&quot;},{&quot;text&quot;:&quot;红色大字&quot;,&quot;color&quot;:&quot;red&quot;,&quot;size&quot;:16},{&quot;text&quot;:&quot; 和 &quot;},{&quot;text&quot;:&quot;下划线&quot;,&quot;underline&quot;:true}]' />
+<CarotaDemo height="180px" :show-json="true" content="<b>粗体文本</b> 和 <i>斜体文本</i><br><font color='red' size='5'>红色大字</font> 和 <u>下划线</u>" />
 
 ## 概述
 
