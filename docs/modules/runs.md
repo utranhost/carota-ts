@@ -2,6 +2,10 @@
 
 `runs` 模块定义了 Carota 的核心数据结构和文本格式系统。
 
+## 实时演示
+
+<CarotaDemo height="180px" :show-json="true" :runs='[{&quot;text&quot;:&quot;粗体文本&quot;,&quot;bold&quot;:true},{&quot;text&quot;:&quot; 和 &quot;},{&quot;text&quot;:&quot;斜体文本&quot;,&quot;italic&quot;:true},{&quot;text&quot;:&quot;\n&quot;},{&quot;text&quot;:&quot;红色大字&quot;,&quot;color&quot;:&quot;red&quot;,&quot;size&quot;:16},{&quot;text&quot;:&quot; 和 &quot;},{&quot;text&quot;:&quot;下划线&quot;,&quot;underline&quot;:true}]' />
+
 ## 概述
 
 `Run`（文本运行）是 Carota 中最基础的数据单元，表示一段具有相同格式的文本。所有文档内容都由 Run 数组表示。该模块还提供了格式合并、比较、克隆、文本操作等工具函数。

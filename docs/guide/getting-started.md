@@ -1,5 +1,9 @@
 # 快速开始
 
+## 在线体验
+
+<CarotaDemo height="240px" content="<p>这是 Carota 编辑器的实时演示。你可以直接编辑文本，使用工具栏或快捷键修改格式。</p><br><p><b>粗体</b> · <i>斜体</i> · <u>下划线</u> · <s>删除线</s></p><br><p>试试 <code>Ctrl+B</code> 加粗、<code>Ctrl+I</code> 斜体、<code>Ctrl+Z</code> 撤销</p>" />
+
 ## 安装
 
 ```bash

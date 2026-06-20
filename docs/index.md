@@ -27,3 +27,15 @@ features:
   - title: TypeScript 重写
     details: 全面使用 TypeScript 严格模式重写，零 any 类型，类型安全
 ---
+
+<script setup>
+import { onMounted } from 'vue'
+</script>
+
+<div style="margin-top: -40px; padding: 0 24px;">
+
+## 在线体验
+
+<CarotaDemo height="280px" content="<h1>欢迎使用 Carota!</h1><br><p>这是一个基于 <b>HTML Canvas</b> 的富文本编辑器。你可以直接在这里编辑文本，体验各种格式功能。</p><br><p>试试选中文字后使用工具栏修改格式，或者使用快捷键 <code>Ctrl+B</code> 加粗、<code>Ctrl+I</code> 斜体。</p>" />
+
+</div>

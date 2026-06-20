@@ -1,9 +1,20 @@
 import { defineConfig } from 'vitepress'
+import { fileURLToPath } from 'url'
+import path from 'path'
+
+const rootDir = path.resolve(fileURLToPath(import.meta.url), '../../..')
 
 export default defineConfig({
   lang: 'zh-CN',
   title: 'Carota-TS',
   description: '基于 HTML Canvas 的简洁、灵活的富文本渲染与编辑库',
+  vite: {
+    resolve: {
+      alias: {
+        'per': path.resolve(rootDir, 'node_modules/per/per.js')
+      }
+    }
+  },
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },

@@ -2,6 +2,10 @@
 
 `doc` 模块是 Carota 的核心，管理文档的所有内容、选区和事务操作。
 
+## 实时演示
+
+<CarotaDemo height="200px" content="<p>Doc 是文档的核心模型。编辑此文本时，Doc 管理着内容、选区和撤销/重做栈。</p><br><p>试试 <code>Ctrl+Z</code> 撤销、<code>Ctrl+Y</code> 重做。</p>" />
+
 ## 概述
 
 `Doc` 是文档的核心模型对象，由 `editor.create()` 创建。它维护了文档的单词列表、选区状态、撤销/重做栈，并提供了内容操作和布局的完整 API。

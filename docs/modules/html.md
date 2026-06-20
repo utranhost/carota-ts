@@ -2,6 +2,10 @@
 
 `html` 模块负责将 HTML 内容解析为 Carota 内部的 Run 数组。
 
+## 实时演示
+
+<CarotaDemo height="200px" content="<h2>HTML 解析演示</h2><br><p>这段文本从 <b>HTML</b> 解析而来，支持 <i>多种格式</i> 标签。</p><br><ul><li>粗体 &lt;b&gt;</li><li>斜体 &lt;i&gt;</li><li>下划线 &lt;u&gt;</li></ul>" />
+
 ## 概述
 
 该模块将 HTML 字符串或 DOM 元素解析为 Run 数组，支持常见的 HTML 格式标签和 CSS 样式属性。还可以通过类名映射自定义格式。
