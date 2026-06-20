@@ -74,7 +74,7 @@ export default defineConfig({
       ]
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/utran/carota-ts' }
+      { icon: 'github', link: 'https://github.com/utranhost/carota-ts' }
     ]
   }
 })
