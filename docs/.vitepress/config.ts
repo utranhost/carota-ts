@@ -8,6 +8,7 @@ export default defineConfig({
   lang: 'zh-CN',
   title: 'Carota-TS',
   description: '基于 HTML Canvas 的简洁、灵活的富文本渲染与编辑库',
+  base: '/carota-ts/',
   vite: {
     resolve: {
       alias: {
