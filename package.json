@@ -1,0 +1,24 @@
+{
+  "name": "carota",
+  "author": "Daniel Earwicker (dan@earwicker.com)",
+  "description": "Simple, flexible rich text rendering/editing on HTML Canvas",
+  "version": "0.1.5",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielearwicker/carota.git"
+  },
+  "main": "src/carota.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "per": "0.1.7"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vite": "^5.4.0"
+  },
+  "license": "MIT"
+}
