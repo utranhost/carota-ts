@@ -1,5 +1,5 @@
-import carota from './carota';
-import { CharacterObject, Formatting, Run } from './runs';
+import carota from './lib/carota';
+import { CharacterObject, Formatting, Run } from './lib/runs';
 
 declare global {
   interface Window {

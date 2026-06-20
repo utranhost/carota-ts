@@ -14,7 +14,7 @@
     "outDir": "./dist",
     "baseUrl": ".",
     "paths": {
-      "per": ["./src/types/per"]
+      "per": ["./src/lib/types/per"]
     }
   },
   "include": ["src/**/*"],

@@ -9,7 +9,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     lib: {
-      entry: 'src/carota.ts',
+      entry: 'src/lib/carota.ts',
       name: 'carota',
       fileName: 'carota',
       formats: ['umd', 'es']

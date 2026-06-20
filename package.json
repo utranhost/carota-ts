@@ -1,13 +1,13 @@
 {
-  "name": "carota",
-  "author": "Daniel Earwicker (dan@earwicker.com)",
+  "name": "carota-ts",
+  "author": "utran <utran.host@qq.com>",
   "description": "Simple, flexible rich text rendering/editing on HTML Canvas",
-  "version": "0.1.5",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/danielearwicker/carota.git"
+    "url": "https://github.com/utran/carota-ts.git"
   },
-  "main": "src/carota.ts",
+  "main": "src/lib/carota.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

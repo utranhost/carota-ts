@@ -65,7 +65,7 @@ export function create(element: HTMLElement): Doc {
   const changeLine = function (ordinal: number, direction: number): number {
     let originalCaret = doc.getCaretCoords(ordinal)!;
     let newCaret: Rect;
-    nextKeyboardX = (keyboardX !== null) ? keyboardX : originalCaret.l;
+    const targetX = (keyboardX !== null) ? keyboardX : originalCaret.l;
 
     while (!exhausted(ordinal, direction)) {
       ordinal += direction;
@@ -77,8 +77,8 @@ export function create(element: HTMLElement): Doc {
 
     originalCaret = newCaret!;
     while (!exhausted(ordinal, direction)) {
-      if ((direction > 0 && newCaret!.l >= nextKeyboardX) ||
-        (direction < 0 && newCaret!.l <= nextKeyboardX)) {
+      if ((direction > 0 && newCaret!.l >= targetX) ||
+        (direction < 0 && newCaret!.l <= targetX)) {
         break;
       }
 
@@ -281,8 +281,9 @@ export function create(element: HTMLElement): Doc {
     return handled;
   };
 
-  dom.handleEvent(textArea, 'keydown', function (ev) {
-    if (handleKey((ev as KeyboardEvent).keyCode, (ev as KeyboardEvent).shiftKey, (ev as KeyboardEvent).ctrlKey)) {
+  dom.handleEvent(textArea, 'keydown', function (ev: Event) {
+    const ke = ev as KeyboardEvent;
+    if (handleKey(ke.keyCode, ke.shiftKey, ke.ctrlKey)) {
       return false;
     }
   });
@@ -419,7 +420,7 @@ export function create(element: HTMLElement): Doc {
   });
 
   function registerMouseEvent(name: string, handler: (node: NodeBase) => void): void {
-    dom.handleMouseEvent(spacer, name, function (ev, x, y) {
+    dom.handleMouseEvent(spacer, name, function (_ev: MouseEvent, x: number, y: number) {
       handler(doc.byCoordinate(x, y - getVerticalOffset()));
     });
   }
