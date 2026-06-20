@@ -6,16 +6,18 @@ import rect, { Rect } from './rect';
 import { Run, Formatting } from './runs';
 import { NodeBase } from './node';
 
-setInterval(function () {
-  const editors = document.querySelectorAll('.carotaEditorCanvas');
+if (typeof document !== 'undefined') {
+  setInterval(function () {
+    const editors = document.querySelectorAll('.carotaEditorCanvas');
 
-  const ev = document.createEvent('Event');
-  ev.initEvent('carotaEditorSharedTimer', true, true);
+    const ev = document.createEvent('Event');
+    ev.initEvent('carotaEditorSharedTimer', true, true);
 
-  for (let n = 0; n < editors.length; n++) {
-    (editors[n] as HTMLElement).dispatchEvent(ev);
-  }
-}, 200);
+    for (let n = 0; n < editors.length; n++) {
+      (editors[n] as HTMLElement).dispatchEvent(ev);
+    }
+  }, 200);
+}
 
 export function create(element: HTMLElement): Doc {
 

@@ -36,7 +36,9 @@ import Playground from './.vitepress/components/Playground.vue'
 
 ## 在线体验
 
+<ClientOnly>
 <Playground />
+</ClientOnly>
 
 ## 关于 Carota 原版项目
 
