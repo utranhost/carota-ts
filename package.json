@@ -1,6 +1,6 @@
 {
   "name": "carota-ts",
-  "author": "utran <utran.host@qq.com>",
+  "author": "utranhost <utran.host@qq.com>",
   "description": "Simple, flexible rich text rendering/editing on HTML Canvas",
   "version": "0.1.0",
   "repository": {
